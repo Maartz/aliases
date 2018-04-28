@@ -1,4 +1,4 @@
-###My Aliases
+## My Aliases
 ---
 
 List of my alises linked in ~/.zshrc file
