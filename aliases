@@ -1,9 +1,33 @@
 # ------------------------------------
+# Global alias and function
+# ------------------------------------
+
+# Create react app with yarn (default)
+alias cra='create-react-app'
+
+# Create react native app
+alias crna='create-react-native-app'
+
+# Create react app with npm (npx)
+alias ncra='npx create-react-app'
+
+# Create app with nuxt js
+
+alias nuxt='vue init nuxt-community/starter-template'
+
+# Create app with vue
+
+alias vue='vue init'
+
+# ------------------------------------
 # Docker alias and function
 # ------------------------------------
 
 # Docker
 alias d='docker'
+
+# Docker run
+alias dr='docker run'
 
 # Get image in interactive mode
 alias drti="docker run -ti"
@@ -47,7 +71,7 @@ alias drmf='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
 # Remove all images
 dri() { docker rmi $(docker images -q); }
 
-# Dockerfile build, e.g., $dbu tcnksm/test
+# Dockerfile build, e.g., $dbu tcnksm/test 
 dbu() { docker build -t=$1 .; }
 
 # Show all alias related docker
